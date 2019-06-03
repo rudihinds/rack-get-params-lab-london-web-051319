@@ -27,7 +27,7 @@ class Application
       if @@items.include? item_to_add
          @@cart << item_to_add
          resp.write "added #{item_to_add}"
-      else resp.write "error"
+      else resp.write "error. We don't have that item"
       end
     else
       resp.write "Path Not Found"
